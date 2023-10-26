@@ -30,7 +30,7 @@ export default function header() {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <Link className="flex" href={link.hash}>
+              <Link className="flex w-full items-center justify-center" href={link.hash}>
                 {link.name}
               </Link>
             </motion.li>
