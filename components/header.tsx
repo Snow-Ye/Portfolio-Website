@@ -4,8 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
-import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
+// import clsx from "clsx";
+// import { useActiveSectionContext } from "@/context/active-section-context";
 
 // 两个部分 一个是背景部分 一个是内容nav bar  因为特效不同要分别渲染
 
