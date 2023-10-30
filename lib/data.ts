@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import chromeExt from "@/public/chromeExt.png";
+import carrental from "@/public/carrental.png";
+import aigenerator from "@/public/aigenerator.png";
 
 
 
@@ -67,22 +67,25 @@ export const projectsData = [
     title: "Chrome Extension",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: ["Javascript"],
+    imageUrl: chromeExt,
+    linkTo:"https://chrome.google.com/webstore/detail/focus-on-programming/khebbaeooaocmajfomppknanpineghgo/related?hl=en"
   },
   {
-    title: "Car Rental Capp",
+    title: "Car Rental App",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "MongoDB"],
-    imageUrl: rmtdevImg,
+    imageUrl: carrental,
+    linkTo:"https://project-team-6.vercel.app/"
   },
   {
     title: "AI Image Generator and Article Summarize",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "Express.js","Node.js", "MongoDB", "Tailwind"],
+    imageUrl: aigenerator,
+    linkTo:"#contact"
   },
 ] as const;
 
