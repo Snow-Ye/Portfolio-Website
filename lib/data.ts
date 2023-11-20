@@ -37,28 +37,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Developer Intern at GaoTek",
+    location: "New York, NY",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Summer 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Developer Intern at Meta-Securities",
+    location: "New York, NY",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Summer 2022",
   },
 ] as const;
 
@@ -69,7 +61,9 @@ export const projectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["Javascript"],
     imageUrl: chromeExt,
-    linkTo:"https://chrome.google.com/webstore/detail/focus-on-programming/khebbaeooaocmajfomppknanpineghgo/related?hl=en"
+    linkTo:"https://chrome.google.com/webstore/detail/focus-on-programming/khebbaeooaocmajfomppknanpineghgo/related?hl=en",
+    tar: "_blank",
+    re:"noopener noreferrer"
   },
   {
     title: "Car Rental App",
@@ -77,7 +71,9 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: carrental,
-    linkTo:"https://project-team-6.vercel.app/"
+    linkTo:"https://project-team-6.vercel.app/",
+    tar: "_blank",
+    re:"noopener noreferrer"
   },
   {
     title: "AI Image Generator and Article Summarize",
@@ -85,7 +81,9 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Express.js","Node.js", "MongoDB", "Tailwind"],
     imageUrl: aigenerator,
-    linkTo:"#contact"
+    linkTo:"ai",
+    tar: "_self",
+    re:"noopener noreferrer"
   },
 ] as const;
 

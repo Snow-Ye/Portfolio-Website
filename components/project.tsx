@@ -15,6 +15,8 @@ export default function Project({
   tags,
   imageUrl,
   linkTo,
+  tar,
+  re
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -38,8 +40,8 @@ export default function Project({
           <a
             className="text-2xl font-semibold"
             href={linkTo}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={tar}
+            rel={re}
           >
             {title}
           </a>
@@ -57,7 +59,7 @@ export default function Project({
             ))}
           </ul>
         </div>
-        <a href={linkTo} target="_blank" rel="noopener noreferrer">
+        <a href={linkTo} target={tar} rel={re }>
           <Image
             src={imageUrl}
             alt="Project I worked on"

@@ -10,7 +10,7 @@ import Project from "./project";
 
 export default function Projects() {
   return (
-    <section className="scroll-mt-28 mb-28">
+    <section className="scroll-mt-28 mb-28" id = "projects">
       <SectionHeading>Projects</SectionHeading>
       <div>
         {/* todos.map((key, index) => { ... }) */}

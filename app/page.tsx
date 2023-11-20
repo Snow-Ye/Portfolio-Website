@@ -3,19 +3,11 @@ import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
-
+import Header from "@/components/header";
+import Mainpage from "@/components/mainpage";
 
 export default function Home() {
-
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <About />
-      <Projects />
-
-      <Experience />
-      
-    </main>
-  )
+    <Mainpage />
+  );
 }

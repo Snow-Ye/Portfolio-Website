@@ -12,7 +12,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function intro() {
   return (
-    <section>
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -66,7 +69,6 @@ export default function intro() {
         My focus is{" "}
         <span className="underline italic">Front-End & Full-Stack</span>.
         <br />
-        
       </motion.h1>
 
       <motion.div

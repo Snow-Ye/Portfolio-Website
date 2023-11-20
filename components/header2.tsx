@@ -2,16 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { links } from "@/lib/projectdata";
 import Link from "next/link";
-import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
 
-// 两个部分 一个是背景部分 一个是内容nav bar  因为特效不同要分别渲染
+export default function Header2() {
 
-export default function header() {
-  // const { activeSection, setActiveSection, setTimeOfLastClick } =
-  // useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
@@ -33,15 +28,14 @@ export default function header() {
             >
               <Link
                 className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
-                href={link.hash}
+                href={link.hrf}
               >
                 {link.name}
-
-                
               </Link>
             </motion.li>
           ))}
         </ul>
+       
       </nav>
     </header>
   );
