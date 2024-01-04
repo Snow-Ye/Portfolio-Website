@@ -41,7 +41,7 @@ export const experiencesData = [
     title: "Software Developer Intern at GaoTek",
     location: "New York, NY",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "",
     icon: React.createElement(LuGraduationCap),
     date: "Summer 2023",
   },
@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Software Developer Intern at Meta-Securities",
     location: "New York, NY",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "",
     icon: React.createElement(CgWorkAlt),
     date: "Summer 2022",
   },
@@ -59,7 +59,7 @@ export const projectsData = [
   {
     title: "Chrome Extension",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "This extension is tailored for programmers, ensuring that only coding-related websites remain within reach. Any site not related to programming gets directed into a  404-page page",
     tags: ["Javascript"],
     imageUrl: chromeExt,
     linkTo:"https://chrome.google.com/webstore/detail/focus-on-programming/khebbaeooaocmajfomppknanpineghgo/related?hl=en",
@@ -69,7 +69,7 @@ export const projectsData = [
   {
     title: "Car Rental App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Full-Stack Car Rental App",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: carrental,
     linkTo:"https://project-team-6.vercel.app/",
