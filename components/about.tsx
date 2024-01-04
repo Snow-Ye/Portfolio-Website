@@ -14,13 +14,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <span className="text-sm">Gender:</span>
-      <span className="italic text-base font-bold"> Male </span>
-      {"  "} <span className="text-sm">Ethenity:</span>
-      {"  "}
-      <span className="italic text-base font-bold"> Asian</span>{" "}
-      <span className="text-sm">Citizenship: </span>{" "}
-      <span className="italic text-base font-bold">United States </span>
+      
       <p className="mb-3">
         After graduating with degree in{" "}
         <span className="font-medium">Economics and Risk Management</span>, I
