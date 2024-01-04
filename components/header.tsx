@@ -12,10 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function header() {
   // const { activeSection, setActiveSection, setTimeOfLastClick } =
   // useActiveSectionContext();
-  const [dropdownVisible, setDropdownVisible] = useState(false);
 
-  const showDropdown = () => setDropdownVisible(true);
-  const hideDropdown = () => setDropdownVisible(false);
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -39,15 +36,7 @@ export default function header() {
                 href={link.hash}
               >
                 {link.name}
-                {link.hasDropdown && (
-                <div
-                  className={`dropdown-menu ${dropdownVisible ? 'visible' : 'hidden'}`}
-                  onMouseEnter={showDropdown}
-                  onMouseLeave={hideDropdown}
-                >
-                  {/* 下拉菜单内容 */}
-                </div>
-              )}
+                
                 
               </Link>
             </motion.li>
