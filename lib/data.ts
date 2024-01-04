@@ -20,6 +20,7 @@ export const links = [
   {
     name: "Projects",
     hash: "#projects",
+    hasDropdown: true,
   },
   {
     name: "Skills",
