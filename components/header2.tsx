@@ -1,12 +1,15 @@
 "use client";
-
-import React from "react";
-import { motion } from "framer-motion";
-import { links } from "@/lib/projectdata";
-import Link from "next/link";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { links } from '@/lib/projectdata';
+import Link from 'next/link';
 
 export default function Header2() {
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
 
+  const toggleProjectsDropdown = () => {
+    setIsProjectsOpen(!isProjectsOpen);
+  };
 
   return (
     <header className="z-[999] relative">
@@ -14,7 +17,6 @@ export default function Header2() {
         className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full "
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
-        
       ></motion.div>
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
@@ -29,13 +31,20 @@ export default function Header2() {
               <Link
                 className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
                 href={link.hrf}
+                onClick={link.name === 'Projects' ? toggleProjectsDropdown : undefined}
               >
                 {link.name}
               </Link>
+              {link.name === 'Projects' && isProjectsOpen && (
+                <div className="absolute top-full left-0 w-full bg-white shadow-md mt-1 py-2">
+                  <Link href="/UniSwap" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UniSwap</Link>
+                  <Link href="/AI Image Generator" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">AI Image Generator</Link>
+                  <Link href="/project3" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Project 3</Link>
+                </div>
+              )}
             </motion.li>
           ))}
         </ul>
-       
       </nav>
     </header>
   );
